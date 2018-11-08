@@ -8,7 +8,7 @@ class Navbar extends React.Component {
             <Link class="navbar-brand" to="/">Home</Link>
             <ul className="navbar-nav mr-auto">
                 <li className="nav-item">
-                    <Link className="nav-link" to="/card/find">Find Card</Link>
+                    <Link className="nav-link" to="/curriculum">Curriculum</Link>
                 </li>
             </ul>
           </nav>;
