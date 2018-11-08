@@ -10,7 +10,8 @@ export default () => (
         <Navbar />
         <div className='container'>
             <Switch>
-                <AuthRoute path='/signup' component={UserForm} />
+                <AuthRoute path='/signin' component={UserForm} />
+                <Redirect to="/" />
             </Switch>
         </div>
     </div>
