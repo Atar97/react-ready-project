@@ -1,5 +1,5 @@
 export const RECEIVE_USERS = 'RECEIVE_USERS';
-import * as APIUtil from '../util/session_api_util';
+import * as UserAPIUtil from '../util/user_api_util';
 
 export const receiveUsers = users => ({
     type: RECEIVE_USERS,
@@ -7,6 +7,6 @@ export const receiveUsers = users => ({
 })
 
 export const createUser = user => dispatch => {
-    return APIUtil.createUser(user)
+    return UserAPIUtil.createUser(user)
         .then(res => dispatch(receiveUsers(res)))
 };
